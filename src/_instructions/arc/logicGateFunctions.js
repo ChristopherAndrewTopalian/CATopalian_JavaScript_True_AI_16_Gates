@@ -14,12 +14,6 @@ function gateAnd(a, b)
 
 function gateNand(a, b)
 {
-    /*
-    if ((a == 0 && b == 0) ||
-        (a == 1 && b == 0) ||
-        (a == 0 && b == 1))
-    */
-
     if (a == 0 || b == 0)
     {
         return "Both False or A True or B True"
@@ -32,12 +26,6 @@ function gateNand(a, b)
 
 function gateOr(a, b)
 {
-    /*
-    if ((a == 1 && b == 0) ||
-        (a == 0 && b == 1) ||
-        (a == 1 && b == 1))
-    */
-
     if (a == 1 || b == 1)
     {
         return "One or Both True";
@@ -88,12 +76,6 @@ function gateXnor(a, b)
 
 function gateCi(a, b)
 {
-    /*
-    if ((a == 0 && b == 0) ||
-        (a == 1 && b == 0) ||
-        (a == 1 && b == 1))
-    */
-
     if (a == 1 || b == 0)
     {
         return "Both False or A True or Both True";
@@ -118,12 +100,6 @@ function gateCni(a, b)
 
 function gateMi(a, b)
 {
-    /*
-    if ((a == 0 && b == 0) ||
-        (a == 0 && b == 1) ||
-        (a == 1 && b == 1))
-    */
-
     if (a == 0 || b == 1)
     {
         return "Both False or B True or Both True";
@@ -174,11 +150,6 @@ function gateRc(a, b)
 
 function gateLp(a, b)
 {
-    /*
-    if ((a == 1 && b == 0) ||
-        (a == 1 && b == 1))
-    */
-
     if (a == 1)
     {
         return "A True or Both True";
@@ -191,11 +162,6 @@ function gateLp(a, b)
 
 function gateLc(a, b)
 {
-    /*
-    if ((a == 0 && b == 0) ||
-        (a == 0 && b == 1))
-    */
-
     if (a == 0)
     {
         return "Both False or B True";
@@ -228,7 +194,7 @@ function gateContradiction(a, b)
         (a == 1 && b == 0) ||
         (a == 1 && b == 1))
     {
-        return "One or Both False or True. Negative Message is placed here, or we can leave it blank";
+        return "One or Both False or True.";
     }
     else
     {
