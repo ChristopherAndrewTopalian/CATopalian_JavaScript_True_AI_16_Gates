@@ -3,6 +3,8 @@ A JavaScript application that creates 16 logic gates to create True AI. A 16 gon
 
 USE APP: https://christopherandrewtopalian.github.io/CATopalian_JavaScript_True_AI_16_Gates/CATopalian_JavaScript_True_AI_16_Gates.html
 
+![screenshot_001](src/media/textures/screenshots/001.PNG)
+
 If you enjoy my apps and tutorials please consider buying me a coffee at [paypal.me/keystonermarch](https://www.paypal.com/paypalme/keystonermarch)
 
 ---
