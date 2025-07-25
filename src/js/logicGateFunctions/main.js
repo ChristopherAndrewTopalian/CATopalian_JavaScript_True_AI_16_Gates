@@ -186,7 +186,9 @@ Opposite: XOR
 
 function gateCi(a, b)
 {
-    if (a == 1 || b == 0)
+    if ((a == 0 && b == 0) ||
+        (a == 1 && b == 0) ||
+        (a == 1 && b == 1))
     {
         return 1;
     }
