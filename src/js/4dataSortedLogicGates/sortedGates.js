@@ -14,7 +14,7 @@ let sortedArray =
 
     logicGates.find(function(gate)
     {
-        return gate.name === 'Xnor';
+        return gate.name === 'Nor';
     }),
 
     logicGates.find(function(gate)
@@ -24,7 +24,7 @@ let sortedArray =
 
     logicGates.find(function(gate)
     {
-        return gate.name === 'Nor';
+        return gate.name === 'Xnor';
     }),
 
     logicGates.find(function(gate)
@@ -54,7 +54,7 @@ let sortedArray =
 
     logicGates.find(function(gate)
     {
-        return gate.name === 'Xor';
+        return gate.name === 'Or';
     }),
 
     logicGates.find(function(gate)
@@ -64,7 +64,7 @@ let sortedArray =
 
     logicGates.find(function(gate)
     {
-        return gate.name === 'Or';
+        return gate.name === 'Xor';
     }),
 
     logicGates.find(function(gate)
@@ -86,7 +86,7 @@ let sortedArray =
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

@@ -12,13 +12,11 @@ let logicGates =
         opposite: "Nand",
         truthTable: "0001",
         order: 7,
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  0
-        1  0  =  0
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  0
+1  0  =  0
+1  1  =  1`
     },
 
     {
@@ -31,13 +29,11 @@ let logicGates =
         opposite: "And",
         truthTable: "1110",
         order: 10,
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  1
-        1  0  =  1
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  1
+1  0  =  1
+1  1  =  0`
     },
 
     {
@@ -50,13 +46,11 @@ let logicGates =
         opposite: "Nor",
         truthTable: "0111",
         order: 13,
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  1
-        1  0  =  1
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  1
+1  0  =  1
+1  1  =  1`
     },
 
     {
@@ -68,13 +62,11 @@ let logicGates =
         formula: "if (a == 0 && b == 0)",
         opposite: "Or",
         truthTable: "1000",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  0
-        1  0  =  0
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  0
+1  0  =  0
+1  1  =  0`
     },
 
     {
@@ -86,13 +78,11 @@ let logicGates =
         formula: "if ((a == 1 && b == 0) || (a == 0 && b == 1))",
         opposite: "Xnor",
         truthTable: "0110",
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  1
-        1  0  =  1
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  1
+1  0  =  1
+1  1  =  0`
     },
 
     {
@@ -104,13 +94,11 @@ let logicGates =
         formula: "if ((a == 0 && b == 0) || (a == 1 && b == 1))",
         opposite: "Xor",
         truthTable: "1001",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  0
-        1  0  =  0
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  0
+1  0  =  0
+1  1  =  1`
     },
 
     {
@@ -122,13 +110,11 @@ let logicGates =
         formula: "if (a == 1 || b == 0)",
         opposite: "Converse NonImplication",
         truthTable: "1011",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  0
-        1  0  =  1
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  0
+1  0  =  1
+1  1  =  1`
     },
 
     {
@@ -140,13 +126,11 @@ let logicGates =
         formula: "if (a == 0 && b == 1)",
         opposite: "Converse Implication",
         truthTable: "0100",
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  1
-        1  0  =  0
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  1
+1  0  =  0
+1  1  =  0`
     },
 
     {
@@ -158,13 +142,11 @@ let logicGates =
         formula: "if (a == 0 || b == 1)",
         opposite: "Material NonImplication",
         truthTable: "1101",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  1
-        1  0  =  0
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  1
+1  0  =  0
+1  1  =  1`
     },
 
     {
@@ -176,13 +158,11 @@ let logicGates =
         formula: "if (a == 1 && b == 0)",
         opposite: "Material Implication",
         truthTable: "0010",
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  0
-        1  0  =  1
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  0
+1  0  =  1
+1  1  =  0`
     },
 
     {
@@ -194,13 +174,11 @@ let logicGates =
         formula: "if ((a == 0 && b == 1) || (a == 1 && b == 1))",
         opposite: "Right Complementation",
         truthTable: "0101",
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  1
-        1  0  =  0
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  1
+1  0  =  0
+1  1  =  1`
     },
 
     {
@@ -212,13 +190,11 @@ let logicGates =
         formula: "if ((a == 0 && b == 0) || (a == 1 && b == 0))",
         opposite: "Right Projection",
         truthTable: "1010",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  0
-        1  0  =  1
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  0
+1  0  =  1
+1  1  =  0`
     },
 
     {
@@ -230,13 +206,11 @@ let logicGates =
         formula: "if (a == 1)",
         opposite: "Left Complementation",
         truthTable: "0011",
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  0
-        1  0  =  1
-        1  1  =  1
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  0
+1  0  =  1
+1  1  =  1`
     },
 
     {
@@ -248,13 +222,11 @@ let logicGates =
         formula: "if (a == 0)",
         opposite: "Left Projection",
         truthTable: "1100",
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  1
-        1  0  =  0
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  1
+1  0  =  0
+1  1  =  0`
     },
 
     {
@@ -266,14 +238,12 @@ let logicGates =
         formula: "if ((a == 0 && b == 0) || (a == 0 && b == 1) || (a == 1 && b == 0) || (a == 1 && b == 1))",
         opposite: "Contradiction",
         truthTable: "1111",
-        order: 6,
-        truthTableFormatted: `
-        A  B
-        0  0  =  1
-        0  1  =  1
-        1  0  =  1
-        1  1  =  1
-        `
+        order: 1,
+        truthTableFormatted: `A  B
+0  0  =  1
+0  1  =  1
+1  0  =  1
+1  1  =  1`
     },
 
     {
@@ -286,20 +256,18 @@ let logicGates =
         opposite: "Tautology",
         truthTable: "0000",
         order: 8,
-        truthTableFormatted: `
-        A  B
-        0  0  =  0
-        0  1  =  0
-        1  0  =  0
-        1  1  =  0
-        `
+        truthTableFormatted: `A  B
+0  0  =  0
+0  1  =  0
+1  0  =  0
+1  1  =  0`
     }
 ];
 
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

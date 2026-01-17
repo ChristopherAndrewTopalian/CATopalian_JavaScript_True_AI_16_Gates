@@ -5,6 +5,9 @@ function makeCircleOfDivs(whichArray)
     // circleContainer
     let circleContainer = ce('div');
     circleContainer.id = 'circleContainer';
+    circleContainer.style.position = 'absolute';
+    circleContainer.style.left = '0px';
+    circleContainer.style.top = '10px';
     ba(circleContainer);
 
     //-//
@@ -14,12 +17,13 @@ function makeCircleOfDivs(whichArray)
     infoDiv.id = 'infoDiv';
     infoDiv.className = 'infoDiv';
     infoDiv.style.position = 'absolute';
-    infoDiv.style.left = ge('buttonContainer').getBoundingClientRect().x + 420;
-    infoDiv.style.top = ge('buttonContainer').getBoundingClientRect().y + -40;
+    infoDiv.style.left = ge('buttonContainer').getBoundingClientRect().x + 420 + 'px';
+    infoDiv.style.top = ge('buttonContainer').getBoundingClientRect().y + -100 + 'px';
     infoDiv.style.margin = '30px';
+    infoDiv.style.fontFamily = 'Arial';
     circleContainer.append(infoDiv);
 
-    let radius = 150;
+    let radius = 160;
 
     let centerX = ge('buttonContainer').getBoundingClientRect().x + 200;
 
@@ -62,7 +66,9 @@ function makeCircleOfDivs(whichArray)
         // onclick
         square.onclick = function()
         {
-            audioPlay('sfx_blip_001', 1.0);
+            clickSound();
+
+            //audioPlay('sfx_blip_001', 0.3);
 
             ge('infoDiv').innerHTML = whichArray[i].abbreviation.bold() + '<br>' +
             whichArray[i].name +
@@ -81,7 +87,9 @@ function makeCircleOfDivs(whichArray)
         // onmouseover
         square.onmouseover = function()
         {
-            audioPlay('sfx_warp_001', 1.0);
+            hoverSound();
+
+            // audioPlay('sfx_warp_001', 0.3);
 
             square.style.borderColor = 'rgb(0, 255, 255)';
             square.style.color = 'rgb(0, 255, 255)';
@@ -115,7 +123,7 @@ function makeCircleOfDivs(whichArray)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting

@@ -7,8 +7,8 @@ function makeAppButton()
     buttonContainer.id = 'buttonContainer';
     buttonContainer.className = 'buttonContainer';
     buttonContainer.style.position = 'absolute';
-    buttonContainer.style.left = '100px';
-    buttonContainer.style.top = '100px';
+    buttonContainer.style.left = '70px';
+    buttonContainer.style.top = '70px';
     ba(buttonContainer);
 
     //-//
@@ -20,7 +20,8 @@ function makeAppButton()
     buttonDivCircle.className = 'buttonDivCircle';
     buttonDivCircle.onclick = function()
     {
-        audioPlay('sfx_blip_001', 1.0);
+        clickSound();
+        // audioPlay('sfx_blip_001', 1.0);
 
         if (ge('circleContainer'))
         {
@@ -35,10 +36,12 @@ function makeAppButton()
 
             makeCircleOfDivs(sortedArray);
 
+            /*
             setTimeout(function()
             {
                 makeCenterPoint();
             }, 1000);
+            */
         }
     };
     buttonContainer.append(buttonDivCircle);
@@ -47,7 +50,7 @@ function makeAppButton()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
