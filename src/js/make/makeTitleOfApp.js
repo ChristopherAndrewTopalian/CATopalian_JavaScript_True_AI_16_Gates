@@ -7,6 +7,7 @@ function makeTitleOfApp()
     mainDiv.style.left = '4px';
     mainDiv.style.top = '2px';
     mainDiv.style.width = '100px';
+    mainDiv.style.lineHeight = '15px';
     ba(mainDiv);
 
     //-//
