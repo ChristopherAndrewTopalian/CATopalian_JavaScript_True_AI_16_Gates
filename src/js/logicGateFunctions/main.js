@@ -1,11 +1,10 @@
-// logicGates.js
-
 // gateAnd.js
 
 function gateAnd(a, b)
 {
     if (a == 1 && b == 1)
     {
+        // Both True
         return 1;
     }
     else
@@ -14,10 +13,11 @@ function gateAnd(a, b)
     }
 }
 
+//----//
+
 /*
 AND
 0001
-Both True
 
 A  B
 0  0  =  0
@@ -28,7 +28,11 @@ A  B
 Opposite: NAND
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateNand.js
 
@@ -36,7 +40,8 @@ function gateNand(a, b)
 {
     if (a == 0 || b == 0)
     {
-        return 1
+        // Both False or A True or B True
+        return 1;
     }
     else
     {
@@ -44,10 +49,11 @@ function gateNand(a, b)
     }
 }
 
+//----//
+
 /*
 NAND
 1110
-Both False or A True or B True
 
 A  B
 0  0  =  1
@@ -58,7 +64,11 @@ A  B
 Opposite: AND
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateOr.js
 
@@ -66,6 +76,7 @@ function gateOr(a, b)
 {
     if (a == 1 || b == 1)
     {
+        // One or Both True
         return 1;
     }
     else
@@ -74,10 +85,11 @@ function gateOr(a, b)
     }
 }
 
+//----//
+
 /*
 OR
 0111
-One or Both True
 
 A B
 0  0  =  0
@@ -88,7 +100,11 @@ A B
 Opposite: NOR
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateNor.js
 
@@ -96,6 +112,7 @@ function gateNor(a, b)
 {
     if (a == 0 && b == 0)
     {
+        // Both False
         return 1;
     }
     else
@@ -104,10 +121,11 @@ function gateNor(a, b)
     }
 }
 
+//----//
+
 /*
 NOR
 1000
-Both False
 
 A B
 0  0  =  1
@@ -118,7 +136,11 @@ A B
 Opposite: OR
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateXor.js
 
@@ -127,6 +149,7 @@ function gateXor(a, b)
     if ((a == 1 && b == 0) ||
         (a == 0 && b == 1))
     {
+        // A True or B True
         return 1;
     }
     else
@@ -135,10 +158,11 @@ function gateXor(a, b)
     }
 }
 
+//----//
+
 /*
 XOR
 0110
-A True or B True
 
 A B
 0  0  =  0
@@ -149,7 +173,11 @@ A B
 Opposite: XNOR
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateXnor.js
 
@@ -158,6 +186,7 @@ function gateXnor(a, b)
     if ((a == 0 && b == 0) ||
         (a == 1 && b == 1))
     {
+        // Both False or Both True
         return 1;
     }
     else
@@ -166,10 +195,11 @@ function gateXnor(a, b)
     }
 }
 
+//----//
+
 /*
 XNOR
 1001
-Both False or Both True
 
 A  B
 0  0  =  1
@@ -180,7 +210,11 @@ A  B
 Opposite: XOR
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateCi.js
 
@@ -188,7 +222,8 @@ function gateCi(a, b)
 {
     if (a == 1 || b == 0)
     {
-        return "Both False or A True or Both True";
+        // Both False or A True or Both True
+        return 1;
     }
     else
     {
@@ -196,10 +231,11 @@ function gateCi(a, b)
     }
 }
 
+//----//
+
 /*
 CI
 1011
-Both False or A True or Both True
 
 A B
 0  0  =  1
@@ -210,7 +246,11 @@ A B
 Opposite: CNI
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateCni.js
 
@@ -218,6 +258,7 @@ function gateCni(a, b)
 {
     if (a == 0 && b == 1)
     {
+        // B True
         return 1;
     }
     else
@@ -226,10 +267,11 @@ function gateCni(a, b)
     }
 }
 
+//----//
+
 /*
 CNI
 0100
-B True
 
 A B
 0  0  =  0
@@ -240,7 +282,11 @@ A B
 Opposite: CI
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateMi.js
 
@@ -248,6 +294,7 @@ function gateMi(a, b)
 {
     if (a == 0 || b == 1)
     {
+        // Both False or B True or Both True
         return 1;
     }
     else
@@ -256,10 +303,11 @@ function gateMi(a, b)
     }
 }
 
+//----//
+
 /*
 MI
 1101
-Both False or B True or Both True
 
 A  B
 0  0  =  1
@@ -270,7 +318,11 @@ A  B
 Opposite: MNI
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateMni.js
 
@@ -278,6 +330,7 @@ function gateMni(a, b)
 {
     if (a == 1 && b == 0)
     {
+        // A True
         return 1;
     }
     else
@@ -286,10 +339,11 @@ function gateMni(a, b)
     }
 }
 
+//----//
+
 /*
 MNI
 0010
-A True
 
 A B
 0  0  =  0
@@ -300,7 +354,11 @@ A B
 Opposite: MI
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateRp.js
 
@@ -309,6 +367,7 @@ function gateRp(a, b)
     if ((a == 0 && b == 1) ||
         (a == 1 && b == 1))
     {
+        // B True or Both True
         return 1;
     }
     else
@@ -317,10 +376,11 @@ function gateRp(a, b)
     }
 }
 
+//----//
+
 /*
 RP
 0101
-B True or Both True
 
 A  B
 0  0  =  0
@@ -331,7 +391,11 @@ A  B
 Opposite: RC
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateRc.js
 
@@ -340,6 +404,7 @@ function gateRc(a, b)
     if ((a == 0 && b == 0) ||
         (a == 1 && b == 0))
     {
+        // Both False or A True
         return 1;
     }
     else
@@ -348,10 +413,11 @@ function gateRc(a, b)
     }
 }
 
+//----//
+
 /*
 RC
 1010
-Both False or A True
 
 A B
 0  0  =  1
@@ -362,7 +428,11 @@ A B
 Opposite: RP
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateLp.js
 
@@ -370,6 +440,7 @@ function gateLp(a, b)
 {
     if (a == 1)
     {
+        // A True or Both True
         return 1;
     }
     else
@@ -378,10 +449,11 @@ function gateLp(a, b)
     }
 }
 
+//----//
+
 /*
 LP
 0011
-A True or Both True
 
 A  B
 0  0  =  0
@@ -392,7 +464,11 @@ A  B
 Opposite: LC
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateLc.js
 
@@ -400,6 +476,7 @@ function gateLc(a, b)
 {
     if (a == 0)
     {
+        // Both False or B True
         return 1;
     }
     else
@@ -408,10 +485,11 @@ function gateLc(a, b)
     }
 }
 
+//----//
+
 /*
 LC
 1100
-Both False or B True
 
 A B
 0  0  =  1
@@ -422,29 +500,44 @@ A B
 Opposite: LP
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateTautology.js
 
+// Tautology does not ask 'if'. It enforces an absolute law. 
+// Truth Table: 0+0=1, 0+1=1, 1+0=1, 1+1=1
 function gateTautology(a, b)
+{
+    return 1; 
+}
+
+//----//
+
+function gateTautology2(a, b)
 {
     if ((a == 0 && b == 0) ||
         (a == 0 && b == 1) ||
         (a == 1 && b == 0) ||
         (a == 1 && b == 1))
     {
+        // One or Both False or True
         return 1;
     }
     else
     {
-        return 0;
+        return 1;
     }
 }
+
+//----//
 
 /*
 TAUTOLOGY
 1111
-One or Both False or True
 
 A  B
 0  0  =  1
@@ -455,18 +548,32 @@ A  B
 Opposite: CONTRADICTION
 */
 
-//----//
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
 
 // gateContradiction.js
 
+// GATE: CONTRADICTION (The Absolute False)
+// Contradiction ignores all input. It is the absolute void.
+// Truth Table: 0+0=0, 0+1=0, 1+0=0, 1+1=0
 function gateContradiction(a, b)
+{
+    return 0; 
+}
+
+//----//
+
+function gateContradiction2(a, b)
 {
     if ((a == 0 && b == 0) ||
         (a == 0 && b == 1) ||
         (a == 1 && b == 0) ||
         (a == 1 && b == 1))
     {
-        return 1;
+        return 0;
     }
     else
     {
@@ -474,10 +581,11 @@ function gateContradiction(a, b)
     }
 }
 
+//----//
+
 /*
 CONTRADICTION
 0000
-One or Both False or True.
 
 A B
 0  0  =  0
@@ -488,6 +596,50 @@ A B
 Opposite: TAUTOLOGY
 */
 
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
+
+// logicGatesCheckInputs.js
+
+let timerAi;
+
+function logicGatesCheckInputs()
+{
+    timerAi = setInterval(function()
+    {
+        let a = ge('inputA').innerHTML;
+
+        let b = ge('inputB').innerHTML;
+
+        gateAnd(a, b);
+        gateNand(a, b);
+
+        gateOr(a, b);
+        gateNor(a, b);
+
+        gateXor(a, b);
+        gateXnor(a, b);
+
+        gateCi(a, b);
+        gateCNi(a, b);
+
+        gateMi(a, b);
+        gateMNi(a, b);
+
+        gateRP(a, b);
+        gateRC(a, b);
+
+        gateLP(a, b);
+        gateLC(a, b);
+
+        gateTautology(a, b);
+        gateContradiction(a, b);
+    }, 100);
+}
+
 //----//
 
 // Dedicated to God the Father
@@ -496,3 +648,4 @@ Opposite: TAUTOLOGY
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
 
+

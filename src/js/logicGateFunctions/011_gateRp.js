@@ -5,7 +5,8 @@ function gateRp(a, b)
     if ((a == 0 && b == 1) ||
         (a == 1 && b == 1))
     {
-        return "B True or Both True";
+        // B True or Both True
+        return 1;
     }
     else
     {

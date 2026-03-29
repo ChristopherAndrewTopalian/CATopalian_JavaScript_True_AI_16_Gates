@@ -4,7 +4,8 @@ function gateLc(a, b)
 {
     if (a == 0)
     {
-        return "Both False or B True";
+        // Both False or B True
+        return 1;
     }
     else
     {

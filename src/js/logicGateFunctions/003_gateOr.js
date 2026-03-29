@@ -4,7 +4,8 @@ function gateOr(a, b)
 {
     if (a == 1 || b == 1)
     {
-        return "One or Both True";
+        // One or Both True
+        return 1;
     }
     else
     {

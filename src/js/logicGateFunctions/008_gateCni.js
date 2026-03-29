@@ -4,7 +4,8 @@ function gateCni(a, b)
 {
     if (a == 0 && b == 1)
     {
-        return "B True";
+        // B True
+        return 1;
     }
     else
     {

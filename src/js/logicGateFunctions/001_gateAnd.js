@@ -4,7 +4,8 @@ function gateAnd(a, b)
 {
     if (a == 1 && b == 1)
     {
-        return "Both True";
+        // Both True
+        return 1;
     }
     else
     {

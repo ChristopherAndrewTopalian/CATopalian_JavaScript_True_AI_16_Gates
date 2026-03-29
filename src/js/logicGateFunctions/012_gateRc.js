@@ -5,7 +5,8 @@ function gateRc(a, b)
     if ((a == 0 && b == 0) ||
         (a == 1 && b == 0))
     {
-        return "Both False or A True";
+        // Both False or A True
+        return 1;
     }
     else
     {

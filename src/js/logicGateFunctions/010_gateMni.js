@@ -4,7 +4,8 @@ function gateMni(a, b)
 {
     if (a == 1 && b == 0)
     {
-        return "A True";
+        // A True
+        return 1;
     }
     else
     {

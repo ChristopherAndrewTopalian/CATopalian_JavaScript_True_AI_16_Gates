@@ -5,7 +5,8 @@ function gateXor(a, b)
     if ((a == 1 && b == 0) ||
         (a == 0 && b == 1))
     {
-        return "A True or B True";
+        // A True or B True
+        return 1;
     }
     else
     {

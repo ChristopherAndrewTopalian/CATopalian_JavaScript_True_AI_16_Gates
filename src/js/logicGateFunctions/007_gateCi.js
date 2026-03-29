@@ -4,7 +4,8 @@ function gateCi(a, b)
 {
     if (a == 1 || b == 0)
     {
-        return "Both False or A True or Both True";
+        // Both False or A True or Both True
+        return 1;
     }
     else
     {

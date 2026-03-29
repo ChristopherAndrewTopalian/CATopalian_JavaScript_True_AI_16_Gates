@@ -4,7 +4,8 @@ function gateNand(a, b)
 {
     if (a == 0 || b == 0)
     {
-        return "Both False or A True or B True"
+        // Both False or A True or B True
+        return 1;
     }
     else
     {
