@@ -508,16 +508,7 @@ Opposite: LP
 
 // gateTautology.js
 
-// Tautology does not ask 'if'. It enforces an absolute law. 
-// Truth Table: 0+0=1, 0+1=1, 1+0=1, 1+1=1
 function gateTautology(a, b)
-{
-    return 1; 
-}
-
-//----//
-
-function gateTautology2(a, b)
 {
     if ((a == 0 && b == 0) ||
         (a == 0 && b == 1) ||
@@ -556,17 +547,7 @@ Opposite: CONTRADICTION
 
 // gateContradiction.js
 
-// GATE: CONTRADICTION (The Absolute False)
-// Contradiction ignores all input. It is the absolute void.
-// Truth Table: 0+0=0, 0+1=0, 1+0=0, 1+1=0
 function gateContradiction(a, b)
-{
-    return 0; 
-}
-
-//----//
-
-function gateContradiction2(a, b)
 {
     if ((a == 0 && b == 0) ||
         (a == 0 && b == 1) ||
