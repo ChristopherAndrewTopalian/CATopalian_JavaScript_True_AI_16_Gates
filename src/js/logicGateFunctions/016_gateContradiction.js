@@ -17,16 +17,6 @@ function gateContradiction(a, b)
 
 //----//
 
-// GATE: CONTRADICTION (The Absolute False)
-// Contradiction ignores all input. It is the absolute void.
-// Truth Table: 0+0=0, 0+1=0, 1+0=0, 1+1=0
-function gateContradiction2(a, b)
-{
-    return 0; 
-}
-
-//----//
-
 /*
 CONTRADICTION
 0000

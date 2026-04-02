@@ -16,15 +16,6 @@ function gateTautology(a, b)
     }
 }
 
-//----//
-
-// Tautology does not ask 'if'. It enforces an absolute law. 
-// Truth Table: 0+0=1, 0+1=1, 1+0=1, 1+1=1
-function gateTautology2(a, b)
-{
-    return 1; 
-}
-
 //-//
 
 /*
